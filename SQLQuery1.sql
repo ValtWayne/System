@@ -30,9 +30,9 @@ CREATE TABLE customer_table(
     Customer_ID INT IDENTITY NOT NULL,
 	Price INT NOT NULL,
 	Room_Class VARCHAR(20) NOT NULL,
-    Customer_Name VARCHAR(20) NOT NULL,
-	Customer_Email VARCHAR(20) NOT NULL,
-	Customer_Contact INT NOT NULL,
+    Customer_Name VARCHAR(255) NOT NULL,
+	Customer_Email NVARCHAR(255) NOT NULL,
+	Customer_Contact NVARCHAR(255) NOT NULL,
     CheckIn DATETIME NOT NULL,
 	CheckOut DATETIME NOT NULL,
    
@@ -42,3 +42,4 @@ CREATE TABLE customer_table(
 INSERT INTO user_table values('admin','admin',1)
 INSERT INTO management_table values('manager1','manager1',1)
 
+SELECT * FROM customer_table
